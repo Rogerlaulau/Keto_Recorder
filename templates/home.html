@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keto Form | Roger</title>
+    <!--<link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://fontawesome.com/v4.7.0/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="text">Keto Form</div>
+    <p style="text-align:center;">Track your health by recording your daily keto level</p>
+    <div style="text-align:right; width:100%; padding:0;">
+      <button class="button button1" onclick="showSummary()"><i class="fa fa-list-alt"></i> Summary</button>
+    </div>
+    <form id="form" action="#">
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="fname" type="text">
+          <div class="underline">
+          </div>
+          <label for="">名 First Name</label>
+        </div>
+        <div class="input-data">
+          <input id="lname" type="text">
+          <div class="underline"></div>
+          <label for="">姓 Last Name</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="gender" type="text">
+          <div class="underline"></div>
+          <label for="">Gender</label>
+        </div>
+        <div class="input-data">
+          <input id="birthday" type="text">
+          <div class="underline"></div>
+          <label for="">Birthday</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="weight" type="text">
+          <div class="underline"></div>
+          <label for="">Weight</label>
+        </div>
+        <div class="input-data">
+          <input id="height" type="text">
+          <div class="underline"></div>
+          <label for="">Height</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="keto_level" type="text" required>
+          <div class="underline"></div>
+          <label for="">Tested Keto Level *</label>
+        </div>
+        <div class="input-data">
+          <input id="start_date" type="text">
+          <div class="underline"></div>
+          <label for="">Date of Starting Keto Diet</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="test_date" type="text" required>
+          <div class="underline"></div>
+          <label for="">Test Date *</label>
+        </div>
+        <div class="input-data">
+          <input id="test_time" type="text">
+          <div class="underline"></div>
+          <label for="">Test Time</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <input id="device_id" type="text" required>
+          <div class="underline"></div>
+          <label for="">Device ID *</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data textarea">
+          <textarea id="remark" rows="8" cols="80"></textarea>
+          <br/>
+          <div class="underline"></div>
+          <label for="">Remark</label>
+          <br/>
+          <div class="form-row submit-btn">
+            <div class="input-data">
+              <div class="inner"></div>
+              <input type="submit" value="submit">
+            </div>
+          </div>
+        </div>
+    </form>
+    </div>
+    <p id="result"></p>
+    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<!-- https://fontawesome.com/v4.7.0/icons/ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+
+<h2>Icon Buttons</h2>
+<p>Icon buttons:</p>
+<button class="btn"><i class="fa fa-home"></i></button>
+<button class="btn"><i class="fa fa-bars"></i></button>
+<button class="btn"><i class="fa fa-trash"></i></button>
+<button class="btn"><i class="fa fa-close"></i></button>
+<button class="btn"><i class="fa fa-folder"></i></button>
+
+<p>Icon buttons with text:</p>
+<button class="btn"><i class="fa fa-home"></i> Home</button>
+<button class="btn"><i class="fa fa-bars"></i> Menu</button>
+<button class="btn"><i class="fa fa-trash"></i> Trash</button>
+<button class="btn"><i class="fa fa-close"></i> Close</button>
+<button class="btn"><i class="fa fa-folder"></i> Folder</button>
+<button class="btn"><i class="fa fa-refresh"></i> REFRESH</button>
+
+<button class="btn"><i class="fa fa-refresh fa-spin fa-4x fa-fw"></i> REFRESH BIG</button>
+
+<div style="text-align:right; width:100%; padding:0;">
+ <button class="btn" onclick="showCommentForm()"><i class="fa fa-list-alt"></i> Summary</button>
+</div>
+
+
+
+
+<div style="width: 100%; height:100px; background:gray;">
+    <div style="width: 33%; height:100px; float:left;">
+        <button class="btn"><i class="fa fa-gear"></i> GEAR</button> 
+        <!--<h1>header</h1>-->
+    </div>
+    <div style="width: 34%; height:100px; float:left;">
+        <h1>header</h1>
+    </div>
+    <div style="width: 33%; height:100px; float:left;">
+        <h1>header</h1>
+    </div>
+</div>
+
+
+
+<!-- have button and head in the same line -->
+<div style="width: 100%;">
+    <div style="float:left;">
+        <button class="btn"><i class="fa fa-gear"></i> GEAR</button>
+    </div>
+    <div style="float:left;">
+        <h1>head</h1>
+    </div>
+</div>
+<br><br>
+
+<script>
+    function showCommentForm() { 
+        window.open("https://rogerlau.net/comment", "_blank");
+    }
+</script>
+
+</body>
+</html>
+
